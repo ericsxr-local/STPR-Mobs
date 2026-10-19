@@ -1,0 +1,97 @@
+# Copy this structure to maps/sdc-0.yml, then replace coordinates.
+map: sdc-0
+world: sdc-0
+
+zones:
+  normal:
+    enabled: true
+    # ONE shared mob pool for every point in this zone.
+    mob-pool:
+      infected: 70
+      heavy_guard: 25
+      sniper: 5
+    points:
+      "0":
+        world: sdc-0
+        x: 100.5
+        y: 65.0
+        z: 100.5
+        yaw: 0.0
+        pitch: 0.0
+        min: 1
+        max: 4
+        respawn-delay: 300s
+      "1":
+        world: sdc-0
+        x: 120.5
+        y: 65.0
+        z: 110.5
+        yaw: 0.0
+        pitch: 0.0
+        min: 2
+        max: 6
+        respawn-delay: 300s
+
+  military:
+    enabled: true
+    mob-pool:
+      heavy_guard: 60
+      sniper: 30
+      elite_guard: 10
+    points:
+      "0":
+        world: sdc-0
+        x: 200.5
+        y: 65.0
+        z: 200.5
+        yaw: 0.0
+        pitch: 0.0
+        min: 2
+        max: 5
+        respawn-delay: 420s
+
+boss:
+  enabled: true
+  interval: 600s
+  chance: 5.0
+  max-alive: 1
+  points:
+    - world: sdc-0
+      x: 300.5
+      y: 65.0
+      z: 300.5
+      yaw: 0.0
+      pitch: 0.0
+    - world: sdc-0
+      x: 340.5
+      y: 65.0
+      z: 340.5
+      yaw: 0.0
+      pitch: 0.0
+  mob-pool:
+    boss_tyrant: 100
+
+tide:
+  enabled: true
+  interval: 1200s
+  chance: 20.0
+  min: 30
+  max: 50
+  points:
+    - world: sdc-0
+      x: 150.5
+      y: 65.0
+      z: 150.5
+      yaw: 0.0
+      pitch: 0.0
+    - world: sdc-0
+      x: 175.5
+      y: 65.0
+      z: 175.5
+      yaw: 0.0
+      pitch: 0.0
+  # Tide pool is separate from Boss; Boss is never selected by Tide.
+  mob-pool:
+    infected: 70
+    heavy_guard: 25
+    elite_guard: 5

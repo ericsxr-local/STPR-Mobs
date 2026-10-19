@@ -1,0 +1,43 @@
+# STPR-Mobs 1.1.0
+# Time format: 10s, 5m, 1h, or plain seconds.
+settings:
+  tick-interval: 20
+  default-respawn-delay: 300s
+  default-health: 20.0
+  default-damage: 3.0
+  default-speed: 0.23
+  default-follow-range: 32.0
+  default-name-visible: true
+  tide-max-spawn-per-event: 60
+  boss-max-alive-per-map: 1
+  test-mobs-tag: true
+
+messages:
+  prefix: "&8[&6STPR-Mobs&8] &r"
+  no-permission: "&cYou do not have permission."
+  player-only: "&cThis command must be run by a player."
+  usage: "&e/stprmob help"
+  created: "&aMob template created: &e%id%"
+  deleted: "&aMob template deleted: &e%id%"
+  exists: "&cMob template already exists: &e%id%"
+  not-found: "&cMob template not found: &e%id%"
+  set: "&aSaved &e%path% &aof &e%id%&a."
+  equip: "&aSaved held item as &e%slot% &afor &e%id%&a."
+  equip-empty: "&cYour hand is empty."
+  unequip: "&aCleared &e%slot% &afor &e%id%&a."
+  drop-added: "&aAdded a drop to &e%id% &awith chance &e%chance%%&a."
+  drop-cleared: "&aCleared drops for &e%id%&a."
+  zone-created: "&aZone created: &e%zone% &ain &e%map%&a."
+  zone-deleted: "&aZone deleted: &e%zone% &ain &e%map%&a."
+  zone-mob-added: "&aAdded &e%mob% &ato zone &e%zone% &awith weight &e%weight%&a."
+  point-added: "&aSpawn point &e%point% &aadded to zone &e%zone% &aof &e%map%&a."
+  point-deleted: "&aSpawn point &e%point% &aremoved."
+  cleared: "&aCleared &e%what%&a."
+  test-spawned: "&aSpawned &e%amount% &a× &e%id%&a for testing."
+  invalid: "&cInvalid value or syntax. Use &e/stprmob help&c."
+  world-missing: "&cThe configured world does not exist."
+  map-saved: "&aSaved map configuration: &e%map%&a."
+  reloaded: "&aSTPR-Mobs reloaded."
+  no-stpr: "&cSTPR is not enabled, so match-bound spawning cannot start."
+  tide-disabled: "&7Tide is disabled for this map."
+  boss-disabled: "&7Boss spawning is disabled for this map."

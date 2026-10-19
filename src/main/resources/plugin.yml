@@ -1,0 +1,15 @@
+name: STPR-Mobs
+version: 1.2.6
+main: com.redmoore.stprmobs.STPRMobsPlugin
+api-version: '1.20'
+author: Eric_SXR
+description: Custom mobs, random spawn points, bosses and tide events for STPR
+commands:
+  stprmob:
+    description: STPR-Mobs administration
+    usage: /stprmob <create|set|equip|drop|test|zone|point|boss|tide|reload>
+    aliases: [mob, mobs]
+permissions:
+  stprmobs.admin:
+    description: Manage STPR-Mobs
+    default: op
